@@ -34,7 +34,7 @@
             ws.send(JSON.stringify(data));
             //messageInput.value = "";
         });
-        var ws = new WebSocket("wss://" + "test.9-thirty.com.tw"  + "/ws");
+        var ws = new WebSocket("ws://" + /*"test.9-thirty.com.tw"*/"13.231.164.149"  + "/ws");
         ws.onmessage = function(event) {
             var message = event.data;
             var p = document.createElement("p");
